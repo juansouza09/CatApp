@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/nome_completo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="Nome Sobrenome"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.2"
+        android:text="USERNAME"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_completo"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/email_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="name@mail.com"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/nome_completo" />
+
+    <ImageButton
+        android:id="@+id/btn_exit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_exit"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_client"
+        app:srcCompat="@drawable/home_degrade"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_coracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/heart_complete"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_favoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/roboto"
+        android:text="Favoritos"
+        android:textColor="#99FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_coracao"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/nome_completo"
+        app:srcCompat="@drawable/ic_ponto"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

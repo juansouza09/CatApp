@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cats</string>
+    <string name="entrar_text_button">ENTRAR</string>
+    <string name="criar_conta_text">CRIAR CONTA</string>
+    <string name="text_erro_texto">Erro</string>
+    <string name="text_erro_usuario">Usuário ou senha incorretos</string>
+    <string name="text_erro_tente">Tente novamente</string>
+    <string name="text_voltar">VOLTAR</string>
+    <string name="senha_hint">Senha</string>
+    <string name="usuario_hint">Usúario</string>
+    <string name="nome_hint">Nome</string>
+    <string name="email_hint">Email</string>
+    <string name="text_text_novaconta">Nova conta</string>
+    <string name="cadastro_button">CADASTRAR</string>
+    <string name="cancelar_button">CANCELAR</string>
+    <string name="helper_text">Senha forte</string>
+    <string name="search">Pesquisar</string>
+    <string name="favoritos_name">Favoritos</string>
+    <string name="nome_da_raca">Nome da raça</string>
+    <string name="text_desc_teste">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet nibh molestie, ultrices lectus vel, facilisis tortor. Vestibulum diam nisi, accumsan eget augue eget, iaculis dictum justo. Cras viverra sollicitudin purus nec iaculis. Nam sed iaculis ipsum. Donec vitae bibendum eros. Aenean eu elit est. Quisque ut sem scelerisque, mattis risus at, finibus mi. </string>
+</resources>

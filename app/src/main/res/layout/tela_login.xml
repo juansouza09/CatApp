@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon_cat_login"
+        android:layout_width="92dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="113dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/IconCat"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/text_cat_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.01"
+        android:text="@string/app_name"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_cat_login" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/entrar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/entrar_text_button"
+        app:layout_constraintBottom_toTopOf="@+id/criar_conta_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_senha" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/criar_conta_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="145dp"
+        android:text="@string/criar_conta_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrar_button" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/usuario_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_senha"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/senha_hint"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_usuario">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
