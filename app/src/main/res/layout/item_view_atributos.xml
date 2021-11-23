@@ -13,7 +13,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck, ContentDescription"
-        android:src="@drawable/IconCat"/>
+        android:src="@drawable/icon_cat"/>
 
     <TextView
         android:id="@+id/text_titulo_atributo"
