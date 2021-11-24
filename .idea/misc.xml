@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/home_degrade.xml" value="0.334375" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.334375" />
         <entry key="app/src/main/res/drawable/ic_heart.xml" value="0.334375" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.3177083333333333" />
         <entry key="app/src/main/res/drawable/ic_ponto.xml" value="0.31302083333333336" />
         <entry key="app/src/main/res/drawable/ic_voltar.xml" value="0.334375" />
         <entry key="app/src/main/res/drawable/teste.xml" value="0.334375" />
@@ -22,7 +23,7 @@
         <entry key="app/src/main/res/layout/item_view_atributos.xml" value="0.5" />
         <entry key="app/src/main/res/layout/item_view_favorite.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_view_home.xml" value="0.67" />
-        <entry key="app/src/main/res/layout/layout_bottom_sheet.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/layout_bottom_sheet.xml" value="0.25" />
         <entry key="app/src/main/res/layout/placeholder_layout.xml" value="0.3182291666666667" />
         <entry key="app/src/main/res/layout/tela_cadastro.xml" value="0.33" />
         <entry key="app/src/main/res/layout/tela_detalhes.xml" value="0.33" />
