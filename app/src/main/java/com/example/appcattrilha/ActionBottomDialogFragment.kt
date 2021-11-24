@@ -17,5 +17,6 @@ class ActionBottomDialogFragment : BottomSheetDialogFragment(), View.OnClickList
 
     override fun onClick(p0: View?) {
 
+
     }
 }

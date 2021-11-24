@@ -2,6 +2,7 @@ package com.example.appcattrilha
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import kotlinx.android.synthetic.main.tela_home.*
 
 
@@ -9,6 +10,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tela_home)
+
 
         topAppBar.setNavigationOnClickListener {
             // Handle navigation icon press
