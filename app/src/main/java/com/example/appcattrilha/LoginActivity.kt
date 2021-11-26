@@ -24,7 +24,5 @@ class LoginActivity : AppCompatActivity() {
         binding.entrarButton.setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
         }
-
-
     }
 }

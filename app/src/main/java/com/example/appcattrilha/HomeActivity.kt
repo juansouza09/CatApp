@@ -11,7 +11,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tela_home)
 
-
         topAppBar.setNavigationOnClickListener {
             // Handle navigation icon press
         openBottomSheet() // abre o Bottom sheet quando clica no menu
