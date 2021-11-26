@@ -23,6 +23,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_view_favorite" />
+        tools:listitem="@layout/item_view_home" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
