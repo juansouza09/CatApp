@@ -11,6 +11,7 @@
         style="@style/icon_cat_style"
         android:layout_width="100dp"
         android:layout_height="110dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="70dp"
         app:layout_constraintEnd_toEndOf="parent"

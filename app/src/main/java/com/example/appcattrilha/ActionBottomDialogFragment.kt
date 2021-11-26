@@ -13,7 +13,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.layout_bottom_sheet.*
 import kotlinx.android.synthetic.main.layout_bottom_sheet.btn_coracao as btn_coracao1
 
-class ActionBottomDialogFragment : BottomSheetDialogFragment(), View.OnClickListener {
+class ActionBottomDialogFragment : BottomSheetDialogFragment() {
     private lateinit var binding: LayoutBottomSheetBinding
 
     override fun onCreateView(
@@ -21,9 +21,20 @@ class ActionBottomDialogFragment : BottomSheetDialogFragment(), View.OnClickList
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.layout_bottom_sheet, container, false)
+        binding = LayoutBottomSheetBinding.inflate(layoutInflater, container, false)
+        binding.btnCoracao.setOnClickListener {
+            startActivity(Intent(requireContext(), FavoritoActivity::class.java))
+            dismiss()
+        }
+
+        binding.btnExit.setOnClickListener {
+            val intent = Intent(requireContext(), LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+            dismiss()
+        }
+
+        return binding.root
     }
 
-    override fun onClick(p0: View?) {
-    }
 }
