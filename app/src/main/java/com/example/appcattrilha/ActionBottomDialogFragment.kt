@@ -36,5 +36,4 @@ class ActionBottomDialogFragment : BottomSheetDialogFragment() {
 
         return binding.root
     }
-
 }
