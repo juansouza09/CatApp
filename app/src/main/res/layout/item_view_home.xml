@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/nome_raca_view"
+            android:id="@+id/txtCatName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/temperamento_view"
+            android:id="@+id/txtTemperamento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -34,7 +34,7 @@
             android:fontFamily="@font/roboto"
             android:text="Temperamento"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nome_raca_view" />
+            app:layout_constraintTop_toBottomOf="@+id/txtCatName" />
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -52,18 +52,18 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imgCat"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="13dp"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/temperamento_view"
+            app:layout_constraintTop_toBottomOf="@+id/txtTemperamento"
             app:srcCompat="@mipmap/ic_launcher"
             tools:ignore="ImageContrastCheck, ContentDescription" />
 
         <TextView
-            android:id="@+id/descrição"
+            android:id="@+id/txtDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -74,7 +74,7 @@
             android:text="Descrição"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintTop_toBottomOf="@+id/imgCat" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
