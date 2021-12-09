@@ -33,7 +33,7 @@ class CatListAdapter(var context: Context, var catModelList: MutableList<CatMode
     }
 
     override fun onBindViewHolder(holder: CatListAdapter.MyViewModel, position: Int) {
-        Picasso.get().load(catModelList[position].imageurl).into(holder.imgCat)
+        Picasso.get().load(catModelList[position].image?.url).into(holder.imgCat)
         holder.txtCatName.text = catModelList[position].name
         holder.txtDesc.text = catModelList[position].desc
         holder.txtTemperamento.text = catModelList[position].temperamento
