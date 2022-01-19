@@ -6,10 +6,10 @@
     <string name="text_erro_usuario">Usuário ou senha incorretos</string>
     <string name="text_erro_tente">Tente novamente</string>
     <string name="text_voltar">VOLTAR</string>
-    <string name="senha_hint">Senha</string>
-    <string name="usuario_hint">Usúario</string>
-    <string name="nome_hint">Nome</string>
-    <string name="email_hint">Email</string>
+    <string name="senha_hint">Senha:</string>
+    <string name="usuario_hint">Usúario:</string>
+    <string name="nome_hint">Nome:</string>
+    <string name="email_hint">Email:</string>
     <string name="text_text_novaconta">Nova conta</string>
     <string name="cadastro_button">CADASTRAR</string>
     <string name="cancelar_button">CANCELAR</string>
