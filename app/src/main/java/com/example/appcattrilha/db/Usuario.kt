@@ -30,6 +30,7 @@ fun UserEntity.toUser(): User {
     return User(
         id = this.id.toString(),
         name = this.name,
+        username = this.username,
         email = this.email
     )
 }

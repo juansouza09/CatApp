@@ -4,27 +4,27 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.example.appcattrilha.Common.Common
+import com.example.appcattrilha.db.model.User
 import com.example.appcattrilha.db.registration.RegistrationViewModel
 import com.example.appcattrilha.db.registration.RegistrationViewParams
 import com.example.appcattrilha.db.repository.UserRepository
 import kotlinx.coroutines.launch
 
-class LoginViewModel (
+class ActionBottomViewModel (
     val userRepository: UserRepository
-        ) : ViewModel(){
+) : ViewModel(){
 
-    class LoginViewModelFactory(private val userRepository: UserRepository) :
+    class ActionBottomViewModelFactory(private val userRepository: UserRepository) :
         ViewModelProvider.Factory {
 
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            return LoginViewModel(userRepository) as T
+            return ActionBottomViewModel(userRepository) as T
         }
     }
 
-    suspend fun login(username: String, password: String) : Boolean{
-            val userId = userRepository.login(username, password)
-        Common.loggedUserId = userId
-        return userId != null
+    suspend fun getUser() : User?{
+       return userRepository.getUser(Common.loggedUserId ?: 0)
+
     }
 
 }

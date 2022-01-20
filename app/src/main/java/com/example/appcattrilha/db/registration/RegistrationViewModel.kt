@@ -4,6 +4,7 @@ import androidx.databinding.ObservableInt
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import com.example.appcattrilha.Common.Common
 import com.example.appcattrilha.databinding.ActivityMainBinding
 import com.example.appcattrilha.db.UserEntity
 import com.example.appcattrilha.db.dao.UserDao
@@ -27,6 +28,8 @@ class RegistrationViewModel (
     fun createUser(name: String, email: String, username: String, password: String){
         viewModelScope.launch {
             userRepository.createUser(RegistrationViewParams(name, username, email, password))
+            val userId = userRepository.login(username, password)
+                Common.loggedUserId = userId
         }
     }
 
