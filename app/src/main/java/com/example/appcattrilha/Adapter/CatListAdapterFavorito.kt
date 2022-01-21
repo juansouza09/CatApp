@@ -11,32 +11,26 @@ import com.example.appcattrilha.Model.CatModel
 import com.example.appcattrilha.R
 import com.squareup.picasso.Picasso
 
-class CatListAdapter(var context: Context, var catModelList: MutableList<CatModel>):
-    RecyclerView.Adapter<CatListAdapter.MyViewModel> () {
+class CatListAdapterFavorito(var context: Context, var catModelList: MutableList<CatModel>):
+    RecyclerView.Adapter<CatListAdapterFavorito.MyViewModel> () {
    inner class MyViewModel(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
        var imgCat: ImageView
        var txtCatName: TextView
-       var txtDesc: TextView
-       var txtTemperamento: TextView
 
        init {
-            imgCat = itemView.findViewById(R.id.imgCat)
+            imgCat = itemView.findViewById(R.id.imgCatFavo)
            txtCatName = itemView.findViewById(R.id.txtCatNameFavo)
-           txtDesc = itemView.findViewById(R.id.txtDesc)
-           txtTemperamento = itemView.findViewById(R.id.txtTemperamento)
        }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CatListAdapter.MyViewModel {
-        return MyViewModel(LayoutInflater.from(context).inflate(R.layout.item_view_home, parent, false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CatListAdapterFavorito.MyViewModel {
+        return MyViewModel(LayoutInflater.from(context).inflate(R.layout.item_view_favorite, parent, false))
     }
 
-    override fun onBindViewHolder(holder: CatListAdapter.MyViewModel, position: Int) {
+    override fun onBindViewHolder(holder: CatListAdapterFavorito.MyViewModel, position: Int) {
         Picasso.get().load(catModelList[position].image?.url).into(holder.imgCat)
         holder.txtCatName.text = catModelList[position].name
-        holder.txtDesc.text = catModelList[position].desc
-        holder.txtTemperamento.text = catModelList[position].temperamento
     }
 
     override fun getItemCount(): Int {

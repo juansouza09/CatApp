@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    tools:menu="@menu/favorite_menu">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/txtCatName"
+            android:id="@+id/txtCatNameFavo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -34,7 +34,7 @@
             android:fontFamily="@font/roboto"
             android:text="Temperamento"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtCatName" />
+            app:layout_constraintTop_toBottomOf="@+id/txtCatNameFavo" />
 
         <ImageButton
             android:id="@+id/imageButton3"
