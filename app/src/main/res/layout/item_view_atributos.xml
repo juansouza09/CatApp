@@ -9,9 +9,10 @@
         android:id="@+id/ic_atributo"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="17dp"
+        android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_titulo_atributo"
         tools:ignore="ImageContrastCheck, ContentDescription"
         android:src="@drawable/icon_cat"/>
 
@@ -20,16 +21,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
+        android:layout_margin="10dp"
         android:text="Titulo"
         app:layout_constraintStart_toEndOf="@+id/ic_atributo"
+        app:layout_constraintBottom_toTopOf="@id/grupo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/grupo"
         android:layout_width="100dp"
         android:layout_height="20dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginBottom="600dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_titulo_atributo">
 

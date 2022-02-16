@@ -3,6 +3,7 @@ package com.example.appcattrilha.Model
 import com.google.gson.annotations.SerializedName
 
 class CatModel {
+    var id : String? = null
     var name: String? = null
     var image : Image? = null
     @SerializedName("description")
@@ -12,5 +13,6 @@ class CatModel {
 }
 
 class Image {
+    var id : String? = null
     var url : String? = null
 }

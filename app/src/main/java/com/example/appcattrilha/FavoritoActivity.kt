@@ -48,9 +48,6 @@ class FavoritoActivity : AppCompatActivity(){
             }
         }
 
-
-
-
         setSupportActionBar(topAppBar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 

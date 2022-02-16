@@ -20,7 +20,7 @@ class CatListAdapterFavorito(var context: Context, var catModelList: MutableList
 
        init {
             imgCat = itemView.findViewById(R.id.imgCatFavo)
-           txtCatName = itemView.findViewById(R.id.txtCatNameFavo)
+           txtCatName = itemView.findViewById(R.id.txtCatData)
        }
     }
 

@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -39,12 +40,16 @@ class HomeActivity : AppCompatActivity() {
             Log.e("MainActivity", "CatList: " + catModels.firstOrNull()?.name)
 
             if (catModels != null){
-                adapter = CatListAdapter(this, catModels)
+                adapter = CatListAdapter(this, catModels){
+                    mainActivityViewModel?.saveFavoriteCat(it)
+                    Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+                }
                 adapter!!.notifyDataSetChanged()
                 recyclerView!!.adapter = adapter
                 dialog!!.dismiss()
             }
         }
+
 
 
         topAppBar.setNavigationOnClickListener {
